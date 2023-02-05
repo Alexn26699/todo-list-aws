@@ -66,10 +66,10 @@ Resources:
           Properties:
             Path: /todos/{id}
             Method: get
-    GetTodoFunctionLanguages:
+    TranslateTodoFunction:
     Type: AWS::Serverless::Function 
     Properties:
-      CodeUri: src/translate.py
+      CodeUri: src/
       Role: !Sub "arn:aws:iam::${AWS::AccountId}:role/LabRole"
       Handler: get.get
       Runtime: python3.7
