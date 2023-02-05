@@ -69,7 +69,7 @@ Resources:
     GetTodoFunctionLanguages:
     Type: AWS::Serverless::Function 
     Properties:
-      CodeUri: src/translate.yml
+      CodeUri: src/translate.py
       Role: !Sub "arn:aws:iam::${AWS::AccountId}:role/LabRole"
       Handler: get.get
       Runtime: python3.7
