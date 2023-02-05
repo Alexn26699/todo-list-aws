@@ -14,7 +14,7 @@ def get(event, context):
     item = todoList.get_item(event['pathParameters']['id'])
     if item:
         target_language = event.get("pathParameters", {}).get("target_language", None)
-        
+        print(target_language)
         if target_language:
             if target_language == "fr":
                 target_language = "fr-FR"
